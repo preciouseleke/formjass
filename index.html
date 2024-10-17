@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <style>
+
+    </style>
+</head>
+<body id="page">
+    <div>
+       
+            
+               <fieldset>
+                <h1>User Registration Form</h1>
+                <p>*All Fields are Required</p>
+             <form>
+                <div>
+                <label for="username" >userName</label><br/>
+                <input type="text" name="username" id="username"
+                 required  placeholder="Enter username">
+                 
+                 </div>
+                <br/>
+                <div>
+                <div>
+                    <label for="password">password</label><br/>
+                    <input type="pwd" name="password" id="password" 
+                    required placeholder="Enter password">
+                    
+                </div>
+                <br/>
+                <div>
+                    <label for="confirm password"> confirm password</label><br/>
+                    <input type="conpwd" name="confirm password" id="conpwd"
+                     required placeholder="confirm password">
+                     <br/>
+                </div>
+                <div>
+                    
+                    <button type="button"  onclick="register()
+                        ">Register</button><br>
+                <br/>
+                </div>
+        
+        
+        
+        </form>
+    </fieldset>   
+    </div> 
+        
+    </div>
+    <script>
+         function username(){
+           var username = document.getElementById("username").value;  
+         }
+       
+         function password(){
+            var password =  document.getElementById("password").value; 
+
+        }
+         function confirmedPassword(){
+             var confirmedPassword =document.getElementById("conpwd").value; 
+         }
+        // var username =prompt('Enter user name');
+        //    if("if registration is correct"){
+        //         alert('successful');
+        //    }else{
+        //     alert('validation error');
+        //    } 
+        // var password =prompt('Enter password'); 
+        //  if('if registration is correct'){
+        //     alert('successful');
+        //  }else{
+        //     alert('validation error');
+        //  }
+        //  var confirmed =prompt('confirmed password');
+        //  if('password ==confirmedpassword'){
+        //     alert('successful');
+        //  }else{
+        //     alert('validation error');
+        //  }
+    </script>
+
+
+
+
+</body>
+</html>
